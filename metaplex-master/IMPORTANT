@@ -1,0 +1,23 @@
+BIP39 Passphrase (empty for none):
+Enter same passphrase again:
+
+# Wrote new keypair to /Users/macpro/config/solana/devnet-hashlip.json
+
+# pubkey: AVB45aDpvnZWnN6RwuSFZhTn32Fz39H7etiXsUurwqCi
+
+Save this seed phrase and your BIP39 passphrase to recover your new keypair:
+betray bread learn used ancient music expire fluid obtain machine life creek
+============================================================================
+
+npx ts-node js/packages/cli/src/candy-machine-cli.ts upload ./assets --env devnet --keypair ~/config/solana/devnet-hashlip.json
+
+npx ts-node js/packages/cli/src/candy-machine-cli.ts create_candy_machine --env devnet --keypair ~/config/solana/devnet-hashlip.json
+
+npx ts-node js/packages/cli/src/candy-machine-cli.ts update_candy_machine --env devnet --keypair ~/config/solana/devnet-hashlip.json --price 1 --date "14 December 2021 00:00:00 EST" --description "Candy Machine"
+
+<!-- CONFIG -->
+
+EKKRiBtRAtcQvF7QhDJp8r15gYB4CYogUAKWtCarLemV
+"authority": "AVB45aDpvnZWnN6RwuSFZhTn32Fz39H7etiXsUurwqCi",
+"candyMachineAddress": "9HhPCQFMFUVg152ukhqK7CmgPovxGEDbSry31kWcGM84",
+"startDate": 1639458000
